@@ -6,7 +6,8 @@
     "seed": "node -r dotenv/config ./scripts/seed.js",
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
-    "start": "next start"
+    "start": "next start",
+    "npx-start": "npx next build && npx next start"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
@@ -28,7 +29,9 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
+    "@neondatabase/serverless": "^0.9.0",
     "@types/bcrypt": "^5.0.1",
+    "@types/pg": "^8.11.4",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.14",
     "@vercel/style-guide": "^5.0.1",
